@@ -1,0 +1,744 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5ECDF;
+    z-index: 0;
+}
+
+body a {
+    text-decoration: none;
+    color: #222925;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    padding: 15px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #222925;
+}
+
+.line {
+    height: 4px;
+    background-color: #222925;
+}
+
+nav {
+    padding-top: 40px;
+}
+
+.header-grid {
+    display: none;
+}
+
+.menu {
+    border: solid 4px #222925;
+    margin: 40px;
+    margin-top: 80px;
+}
+
+.mainmenu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #F5ECDF;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    overflow-y: scroll;
+    z-index: 10;
+}
+
+nav li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
+    list-style: none;
+    padding: 25px;
+    border-bottom: solid 4px #222925;
+}
+
+nav li:last-child {
+    border-bottom: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222925;
+}
+
+.nav-links {
+    border: solid 4px #222925;
+    margin: 40px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "close-button close-button"
+    "lt en"
+    "hc hc";
+    align-items: center;
+    border: solid 4px #222925;
+    margin: 40px;
+}
+
+.close-button {
+    grid-area: close-button;
+    border-bottom: solid 4px #222925;
+}
+
+.lt {
+    grid-area: lt;
+    border-right: solid 4px #222925;
+}
+
+.en {
+    grid-area: en;
+}
+
+.hc {
+    grid-area: hc;
+    text-align: center;
+    border-top: solid 4px #222925;
+}
+
+.logo {
+    display: flex;
+}
+
+.wasp {
+    width: 65px;
+}
+
+.honeycoasta {
+    width: 190px;
+}
+
+/* main*/
+/* something on your mind*/
+
+h1{
+    font-family: 'Archivo Black';
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #222925;
+}
+.title{
+    width: 70%;
+    margin-top: 15%;
+    margin-bottom: 25%;
+    margin-left: 5%;
+}
+.borderbox{
+    border: solid 4px #222925;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.redbox{
+    border: solid 4px #222925;
+    margin: 40px 20px 40px 20px ;
+    background-color: #BF5123;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profilepic{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 43%;
+    border: solid 4px #222925;
+    margin-top: 60px;
+}
+
+/* write me an email*/
+
+.formbox{
+    border: solid 4px #222925;
+    margin: 40px 20px 40px 20px ;
+
+}
+.formtitle{
+    width: 80%;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+   
+}
+
+.form{
+    margin: 5% 10% 12% 5%;
+}
+
+/* The below coded form styling is an adapted and modified version of the W3Schools' example viewed on 01/06/2022 https://www.w3schools.com/css/css_form.asp */
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #222925;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-color: #F5ECDF;
+    color: #222925;
+}
+label{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #222925;
+}
+#message{
+    padding:50px;
+}
+input[type=submit] {
+    width: 100%;
+    background-color:#F5ECDF;
+    color: #222925;
+    padding: 14px 20px;
+    margin: 8px 0;
+   display: inline-block;
+    border: 3px solid #222925;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.bumblebee{
+    max-width: 30%;
+    margin-top: -8rem;
+    z-index: 5;
+    position: relative;
+}
+
+/* streaming links*/
+.stream{
+    margin: 10px 20px 40px 40px ;
+}
+.applediv{
+    background-color: #537358;
+    border: 4px solid #222925;
+    margin: 0% 40% 5% 0%;
+    padding: 8%;
+    
+}
+.apple-music{
+    max-width: 100%;
+}
+.cloudiv{
+    background-color: #BF5123;
+    border: 4px solid #222925;
+    margin: -18% 0% 5% 40%;
+    padding: 11%;
+}
+.cloud{
+    max-width: 100%;
+}
+.spotifydiv{
+    background-color: #537358;
+    border: 4px solid #222925;
+    margin: -18% 40% 5% 0%;
+    padding: 11%;
+}
+.spotifyy{
+    max-width: 100%;
+}
+
+/* social media links*/
+
+.socials{
+    margin: 55px 20px 40px 20px ;
+}
+.fbdiv{
+    background-color: #537358;
+    border: 4px solid #222925;
+    margin: 5% 12% 5% 12%;
+    padding: 20%;
+}
+.fb{
+    max-width: 100%;
+}
+.redball{
+    max-width: 70%;
+    margin-top: -6rem;
+    margin-left: 4.5rem;
+    position: relative;
+    z-index: -3;
+}
+
+.igdiv{
+    background-color: #BF5123;
+    border: 4px solid #222925;
+    margin: 5% 12% 5% 12%;
+    padding: 20%;
+}
+.insta{
+    max-width: 100%;
+}
+.blueball{
+    max-width: 65%;
+    margin-top: -7rem;
+    margin-right: 22%;
+    margin-left: 20%;
+    position: relative;
+    z-index: -3;
+}
+
+.tiktokdiv{
+    background-color: #537358;
+    border: 4px solid #222925;
+    margin: 20% 12% 5% 12%;
+    padding: 18%;
+}
+.tt{
+    max-width: 100%;
+}
+.greenball{
+    max-width: 65%;
+    margin-top: -6rem;
+    margin-left: -3rem;
+    position: relative;
+    z-index: -1;
+}
+
+footer {
+    border: solid 4px #222925;
+    margin: 40px;
+    margin-bottom: 40px;
+}
+
+footer h2 {
+    padding: 25px;
+    font-size: 1.2em;
+}
+
+.terms {
+    grid-area: terms;
+    border-bottom: solid 4px #222925;
+}
+
+.policy {
+    grid-area: policy;
+    border-bottom: solid 4px #222925;
+}
+
+.cookies {
+    grid-area: cookies;
+    border-bottom: solid 4px #222925;
+}
+
+.footer-logo {
+    grid-area: footer-logo;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 240px;
+}
+
+.footer-line {
+    grid-area: footer-line;
+    height: 4px;
+    width: 165px;
+    background-color: #222925;
+}
+
+.copy {
+    grid-area: copy;
+    padding: 0;
+}
+
+.tiktok {
+    grid-area: tiktok;
+}
+
+.ig {
+    grid-area: ig;
+    border-top: solid 4px #222925;
+    border-right: solid 4px #222925;
+}
+
+.soundcloud {
+    grid-area: soundcloud;
+    border-top: solid 4px #222925;
+}
+
+.apple {
+    grid-area: apple;
+    border-top: solid 4px #222925;
+    border-right: solid 4px #222925;
+}
+
+.spotify {
+    grid-area: spotify;
+    border-top: solid 4px #222925;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-areas: 
+    "cookies cookies"
+    "terms terms"
+    "policy policy"
+    "footer-logo footer-logo"
+    "footer-line copy"
+    "tiktok ."
+    "ig soundcloud"
+    "apple spotify";
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-for-desktop{
+    display: none;
+}
+
+@media(min-width: 1440px) {
+    .buttons {
+        grid-template-areas: 
+        "close-button"
+        "lt"
+        "en"
+        "hc";
+        grid-template-rows: 1fr 1fr 1fr 3fr;
+    }
+
+    .buttons2 {
+        grid-template-areas: 
+        "close-button"
+        "lt"
+        "en"
+        "hc";
+        grid-template-rows: 1fr 1fr 1fr 3fr;
+        position: fixed;
+    }
+
+    nav li {
+        padding: 3%;
+    }
+
+    .nav1 {
+        width: 50%;
+    }
+
+    .nav2 {
+        width: 70%;
+    }
+
+    .nav4 {
+        width: 40%;
+    }
+
+    .nav5 {
+        width: 60%;
+    }
+
+    nav li:last-child {
+        border-bottom: solid 4px #222925;
+        width: 90%;
+    }
+
+    .honeycoasta {
+        width: 150px;
+    }
+
+    .wasp {
+        display: none;
+    }
+
+    .lt, .en, .close-button,.menu-button {
+        font-size: 1em;
+        padding: 55px;
+    }
+
+    .buttons > * {
+        transform: rotate(-90deg);
+    } 
+
+    .mainmenu {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 5fr;
+
+    }
+
+    .navigation {
+        height: 100vh;
+        padding: 0;
+        padding-top: 10vh;
+        z-index: 100;
+    }
+
+    .hc {
+        border-top: none;
+    }
+
+    .en {
+        border-right: solid 4px #222925;
+        border-left: solid 4px #222925;
+    }
+
+    .lt {
+        border-right: solid 4px #222925;
+    }
+
+    .close-button {
+        border-bottom: none;
+    }
+
+    nav {
+        padding-top: 0;
+    }
+
+    .navigation {
+        position: fixed;
+    }
+
+    .buttons, .nav-links {
+        height: 90vh;
+    }
+
+    .menu-for-desktop {
+        display: block;
+        position: fixed;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .content {
+        grid-area: content;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .footer{
+        grid-area: footer;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: 
+        "sidebar content"
+        ". footer";
+    }
+  
+    .borderbox{
+        display: grid;
+        grid-template-areas:
+        'redbox form socials'
+        'redbox form socials'
+        'stream form socials';
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-bottom: 40px;
+    }
+
+    .redbox{
+        grid-area: redbox;
+        margin-top: 5%;
+        margin-bottom: 20px;
+
+    }
+
+    .title{
+        text-align: center;
+        font-size: 35px;
+        margin-top: 5%;
+        text-align: left;
+    }
+
+    .formbox{
+        grid-area: form;
+    }
+
+    .stream{
+        grid-area: stream;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 7% 0 7%;
+    }
+
+    .socials{
+        grid-area: socials;
+        margin-top: 15px;
+    }
+
+
+    .fbdiv{
+        margin: 6% 12% 5% 5%;
+        padding: 15%;
+        width: 180px;
+    }
+    .redball{
+        max-width: 60%;
+        margin-top: -6rem;
+        margin-left: 6rem;
+    }
+    
+    .igdiv{
+        margin: 30% 14% 5% 5%;
+        padding: 15%;
+        width: 180px;
+    }
+ 
+    .blueball{
+        max-width: 63%;
+        margin-top: -50%;
+        margin-right: 30%;
+        margin-left: 10%;
+
+    }
+    
+    .tiktokdiv{
+        margin: 30% 12% 5% 5%;
+        padding: 13%;
+        width: 180px;
+    }
+   
+    .greenball{
+        max-width: 68%;
+        margin-top: -8rem;
+        margin-left: -1.5rem;
+        
+    }
+
+    .applediv{
+        padding: 2%;
+        width: 120px;
+        height: 230px;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .cloudiv{
+        margin: 6% 0 0 0;
+        padding: 3%;
+        width: 120px;
+        height: 230px;
+        display: flex;
+        align-items: center;
+     
+    }
+
+    .spotifydiv{
+        padding: 4%;
+        width: 120px;
+        height: 230px;
+        display: flex;
+        align-items: center;
+       
+        margin: 0;
+   
+        
+    
+    }
+
+    .formtitle{
+        font-size: 35px;
+        width: 60%;
+    }
+
+    .form{
+        margin: 5% 10% 12% 5%;
+    }
+
+    input[type=text], select {
+        margin-bottom: 40px;
+    }
+
+    #message{
+        padding:80px;
+    }
+
+    input[type=submit] {
+        width: 20%;
+        float: right;
+    }
+
+    .bumblebee{
+        max-width: 15%;
+        margin-top: -9rem;
+        margin-left: 110%;  
+    }
+
+    footer h2 {
+        padding-top: 35px;
+    }
+
+    .footer-grid {
+        grid-template-areas: 
+        ". footer-logo copy cookies terms policy policy"
+        ". footer-logo tiktok ig soundcloud apple spotify";
+        align-items: normal;
+        justify-content: normal;
+    }
+
+    .footer-logo {
+        width: 220px;
+    }
+
+    .footer-line {
+        display: none;
+    }
+
+    .terms, .policy {
+        border-left: solid 4px #222925;
+        border-bottom: none;
+    }
+
+    .cookies {
+        border-bottom: none;
+    }
+
+    .ig {
+        border-top: solid 4px #222925;
+        border-right: none;
+    }
+
+    .soundcloud {
+        border-left: solid 4px #222925;
+    }
+
+    .copy {
+        padding: 40px;
+        border-right: solid 4px #222925;
+    }
+
+    .tiktok {
+        border-top: solid 4px #222925;
+        border-left: solid 4px #222925;
+        border-right: solid 4px #222925;
+    }
+
+    .apple {
+        border-left: solid 4px #222925;
+    }
+
+}
+
+
+.nav-active{
+    transform: translateX(0%);
+}
+

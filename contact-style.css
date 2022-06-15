@@ -263,15 +263,16 @@ input[type=submit] {
 .fbdiv{
     background-color: #537358;
     border: 4px solid #222925;
-    margin: -35% 0% 5% 40%;
+    margin: 0% 0% 5% 40%;
     padding: 12%;
 }
 .fb{
     max-width: 100%;
 }
 .redball{
-    max-width: 55%;
+    max-width: 58%;
     margin-left: 2.9rem;
+    margin-top: -58%;
     position: relative;
     z-index: -3;
 }
@@ -296,7 +297,7 @@ input[type=submit] {
 .tiktokdiv{
     background-color: #537358;
     border: 4px solid #222925;
-    margin: -18% 0% 5% 40%;
+    margin: -28% 0% 5% 40%;
     padding: 10%;
 }
 .tt{
@@ -304,7 +305,7 @@ input[type=submit] {
 }
 .greenball{
     max-width: 50%;
-    margin-top: -4rem;
+    margin-top: -5rem;
     margin-left: 3.2rem;
     position: relative;
     z-index: -1;

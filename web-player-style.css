@@ -12,6 +12,7 @@ body {
 
 body a {
     text-decoration: none;
+    color: #222925;
 }
 
 h2 {
@@ -31,6 +32,7 @@ nav {
     padding-top: 40px;
 }
 
+
 .menu-for-desktop {
     display: none;
 }
@@ -42,6 +44,7 @@ nav {
 }
 
 .mainmenu {
+    z-index: 2;
     position: fixed;
     right: 0;
     top: 0;
@@ -135,6 +138,25 @@ nav ul li a {
     margin-top: 40px;
 }
 
+.audio{
+    background-color: transparent;
+    color: #222925;
+}
+
+.audio-player {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    color: #444;
+    overflow: hidden;
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: #A4BFBA;
+}
+
+
 .artwork1 {
     width: 200px;
     height: 200px;
@@ -147,12 +169,12 @@ nav ul li a {
 
 .play-song-section {
     margin-top: -15%;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
 }
 
 .player-grid {
     margin-top: 10%;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
     background-color: #A4BFBA;
     border-top: solid 4px #222925;
 }
@@ -173,9 +195,9 @@ nav ul li a {
 
 .player-buttons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 20%;
+    align-items: center;
 }
 
 .play-line {
@@ -205,6 +227,12 @@ nav ul li a {
     transform: rotate(180deg);
 }
 
+.play-next-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 /* new releases section starts here */
 
 .releases-img {
@@ -220,6 +248,7 @@ nav ul li a {
 .releases-name {
     font-family: 'Archivo', sans-serif;
     font-style: normal;
+    font-size: 1.2em;
     text-align: left;
     padding: 0;
     padding-left: 19%;
@@ -229,6 +258,7 @@ nav ul li a {
 .releases-year {
     font-family: 'Archivo', sans-serif;
     font-style: normal;
+    font-size: 1em;
     text-align: left;
     padding-left: 19%;
     tab-size: 1em;
@@ -243,10 +273,14 @@ nav ul li a {
 
 .social-box {
     display: flex;
-    border: solid 4px #222925;
+    border: solid 3px #222925;
     margin: 20px 60px;
     justify-content: center;
     align-items: center;
+}
+
+.line-through {
+    text-decoration: line-through;
 }
 
 .releases-social {
@@ -514,11 +548,17 @@ footer h2 {
         padding: 0;
     }
 
-    .played-button {
-        grid-area: played-button;
-        margin-left: auto;
-        margin-right: auto;
+    .audio-player{
+        grid-area: audio-player;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
     }
+
+    audio{
+        width: 400px;
+    }
+
 
     .played-year {
         grid-area: played-year;
@@ -528,8 +568,8 @@ footer h2 {
     .player-grid {
         display: grid;
         grid-template-areas: 
-        "artwork played-song played-button"
-        "artwork played-year played-button";
+        "artwork played-song audio-player"
+        "artwork played-year audio-player";
         background-color: #A4BFBA;
         border-top: solid 4px #222925;
         margin-top: 5%;

@@ -1,0 +1,568 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5ECDF;
+    z-index: 0;
+    color: #222925;
+}
+
+body a {
+    text-decoration: none;
+    color: #222925;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    padding: 15px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #222925;
+}
+
+.line {
+    height: 4px;
+    background-color: #222925;
+}
+
+nav {
+    padding-top: 40px;
+}
+
+.menu-for-desktop {
+    display: none;
+}
+
+.line {
+    width: 300px;
+    height: 17px;
+    margin-bottom: 5%;
+    background-color: #A4BFBA;
+    border: solid 4px #222925;
+    text-align: right;
+}
+
+.line1 {
+    width: 200px;
+}
+
+.menu {
+    border: solid 4px #222925;
+    margin: 40px;
+    margin-top: 80px;
+}
+
+.mainmenu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #F5ECDF;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    overflow-y: scroll;
+}
+
+nav li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
+    list-style: none;
+    padding: 25px;
+    border-bottom: solid 4px #222925;
+}
+
+nav li:last-child {
+    border-bottom: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222925;
+}
+
+.nav-links {
+    border: solid 4px #222925;
+    margin: 40px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "close-button close-button"
+    "lt en"
+    "hc hc";
+    align-items: center;
+    border: solid 4px #222925;
+    margin: 40px;
+}
+
+.close-button {
+    grid-area: close-button;
+    border-bottom: solid 4px #222925;
+}
+
+.lt {
+    grid-area: lt;
+    border-right: solid 4px #222925;
+}
+
+.en {
+    grid-area: en;
+}
+
+.hc {
+    grid-area: hc;
+    text-align: center;
+    border-top: solid 4px #222925;
+}
+
+.logo {
+    display: flex;
+}
+
+.wasp {
+    width: 65px;
+}
+
+.honeycoasta {
+    width: 190px;
+}
+
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.7em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.section-titles {
+    font-family: 'Archivo Black', sans-serif;
+    font-style: normal;
+    border: solid 4px #222925;
+    margin: 40px;
+}
+
+footer {
+    border: solid 4px #222925;
+    margin: 40px;
+    margin-bottom: 40px;
+}
+
+footer h2 {
+    padding: 25px;
+    font-size: 1.2em;
+}
+
+.terms {
+    grid-area: terms;
+    border-bottom: solid 4px #222925;
+}
+
+.policy {
+    grid-area: policy;
+    border-bottom: solid 4px #222925;
+}
+
+.cookies {
+    grid-area: cookies;
+    border-bottom: solid 4px #222925;
+}
+
+.footer-logo {
+    grid-area: footer-logo;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 240px;
+}
+
+.footer-line {
+    grid-area: footer-line;
+    height: 4px;
+    width: 165px;
+    background-color: #222925;
+}
+
+.copy {
+    grid-area: copy;
+    padding: 0;
+}
+
+.tiktok {
+    grid-area: tiktok;
+}
+
+.ig {
+    grid-area: ig;
+    border-top: solid 4px #222925;
+    border-right: solid 4px #222925;
+}
+
+.soundcloud {
+    grid-area: soundcloud;
+    border-top: solid 4px #222925;
+}
+
+.apple {
+    grid-area: apple;
+    border-top: solid 4px #222925;
+    border-right: solid 4px #222925;
+}
+
+.spotify {
+    grid-area: spotify;
+    border-top: solid 4px #222925;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-areas: 
+    "cookies cookies"
+    "terms terms"
+    "policy policy"
+    "footer-logo footer-logo"
+    "footer-line copy"
+    "tiktok ."
+    "ig soundcloud"
+    "apple spotify";
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex: 100%;
+    max-width: 100%;
+}
+
+.merch-images {
+    height: 340px;
+    width: 340px;
+    display:block;
+    margin:0 auto;
+}
+
+.merch-section {
+    margin: 40px;
+    display: grid;
+    border: solid 4px #222925
+}
+
+.item-name {
+    font-family: 'Archivo Black', sans-serif;
+    padding-left: 20%;
+    font-weight: bold;
+    font-size: large;
+}
+
+.item-description {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20%;
+    padding-right: 80px;
+    padding-bottom: 30px;
+}
+
+.item-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-price {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+    padding-right: 15%;
+    font-size: medium;
+}
+
+#merch-title {
+    margin: 40px;
+    display: grid;
+    border: solid 4px #222925;
+    background-color:#A4BFBA;
+}
+
+#merch-mobile{
+    margin: 10px;
+    display: block;
+}
+
+#merch-laptop {
+    display: none;
+}
+#flower {
+    margin-bottom: 0%;
+    position: relative;
+    height: 200px;
+    left: 50%;
+}
+@media(min-width: 1440px) {
+    #merch-title {
+        margin-bottom: 0%;
+        position: absolute;
+        top: -5%;
+        left: 70%;
+    }
+
+    #merch-laptop{
+        margin: 20px;
+        display: block;
+        width: 120%;
+    }
+
+    #merch-mobile{
+        display: none;
+    }
+    
+    .merch-section {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      #flower {
+        margin-bottom: 0%;
+        position: relative;
+        height: 300px;
+        width: 300px;
+        top: 90%;
+        left: 83%;
+      }    
+    .buttons {
+        grid-template-areas: 
+        "close-button"
+        "lt"
+        "en"
+        "hc";
+        grid-template-rows: 1fr 1fr 1fr 3fr;
+    }
+
+    .buttons2 {
+        grid-template-areas: 
+        "close-button"
+        "lt"
+        "en"
+        "hc";
+        grid-template-rows: 1fr 1fr 1fr 3fr;
+        position: fixed;
+    }
+
+    nav li {
+        padding: 35px;
+    }
+
+    .nav1 {
+        width: 50%;
+    }
+
+    .nav2 {
+        width: 70%;
+    }
+
+    .nav4 {
+        width: 40%;
+    }
+
+    .nav5 {
+        width: 60%;
+    }
+
+    nav li:last-child {
+        border-bottom: solid 4px #222925;
+        width: 90%;
+    }
+
+    .honeycoasta {
+        width: 150px;
+    }
+
+    .wasp {
+        display: none;
+    }
+
+    .lt, .en, .close-button,.menu-button {
+        font-size: 1em;
+        padding: 55px;
+    }
+
+    .buttons > * {
+        transform: rotate(-90deg);
+    } 
+
+    .mainmenu {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 5fr;
+
+    }
+
+    .navigation {
+        height: 100vh;
+        padding: 0;
+        padding-top: 10vh;
+        z-index: 100;
+    }
+
+    .hc {
+        border-top: none;
+    }
+
+    .en {
+        border-right: solid 4px #222925;
+        border-left: solid 4px #222925;
+    }
+
+    .lt {
+        border-right: solid 4px #222925;
+    }
+
+    .close-button {
+        border-bottom: none;
+    }
+
+    nav {
+        padding-top: 0;
+    }
+
+    .navigation {
+        position: fixed;
+    }
+
+    .buttons, .nav-links {
+        height: 90vh;
+    }
+
+    .menu-for-desktop {
+        display: block;
+        position: fixed;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .content {
+        grid-area: content;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: 
+        "sidebar content";
+    }
+
+    .menu {
+        display: none;
+    }
+
+    h4 {
+        font-family: 'Archivo Black', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1em;
+    }
+
+
+    .swiper {
+        display: none;
+    }
+
+   
+    .logo-mobile {
+        margin-left: 30%;
+        margin-right: 0;
+    }
+
+    h1 {
+        text-align: right;
+        padding-right: 10%;
+        margin-top: 0;
+        margin-bottom: 80%;
+        margin-left: auto;
+    }
+
+    footer h2 {
+        padding-top: 35px;
+    }
+
+    .footer-grid {
+        grid-template-areas: 
+        ". footer-logo copy cookies terms policy policy"
+        ". footer-logo tiktok ig soundcloud apple spotify";
+        align-items: normal;
+        justify-content: normal;
+    }
+
+    .footer-logo {
+        width: 220px;
+    }
+
+    .footer-line {
+        display: none;
+    }
+
+    .terms, .policy {
+        border-left: solid 4px #222925;
+        border-bottom: none;
+    }
+
+    .cookies {
+        border-bottom: none;
+    }
+
+    .ig {
+        border-top: solid 4px #222925;
+        border-right: none;
+    }
+
+    .soundcloud {
+        border-left: solid 4px #222925;
+    }
+
+    .copy {
+        padding: 40px;
+        border-right: solid 4px #222925;
+    }
+
+    .tiktok {
+        border-top: solid 4px #222925;
+        border-left: solid 4px #222925;
+        border-right: solid 4px #222925;
+    }
+
+    .apple {
+        border-left: solid 4px #222925;
+    }
+
+}
+.nav-active{
+    transform: translateX(0%);
+}
+

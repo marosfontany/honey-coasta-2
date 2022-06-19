@@ -148,7 +148,6 @@ nav ul li a {
 }
 
 .grid1 {
-
     border: solid 4px #222925;
     margin-bottom: 0px;
     margin-top: 100px;
@@ -347,8 +346,8 @@ footer h2 {
     .star {
         width: 10rem; 
         z-index: 1;
-        margin-left: 12rem;
-        margin-top: -11rem;
+        margin-left: 10rem;
+        margin-top: -9rem;
     }
     
 }
@@ -358,7 +357,7 @@ footer h2 {
     .star {
         width: 10rem; 
         z-index: 1;
-        margin-left: 15rem;
+        margin-left: 12rem;
         margin-top: -11rem;
     }
 }
@@ -368,7 +367,7 @@ footer h2 {
     .star {
         width: 10rem; 
         z-index: 1;
-        margin-left: 18rem;
+        margin-left: 14rem;
         margin-top: -11rem;
     }
 }
@@ -378,7 +377,7 @@ footer h2 {
     .star {
         width: 10rem; 
         z-index: 1;
-        margin-left: 39rem;
+        margin-left: 36srem;
         margin-top: -11rem;
     }
 }
@@ -515,14 +514,15 @@ footer h2 {
 
     .title {
         grid-area: title;
-        writing-mode: vertical-lr;
+        margin-left: 25rem;
+        width: 40%;
+        height: 6rem;
     }
 
     .star {
         width: 10rem; 
-        z-index: 1;
-        margin-left: -2rem;
-        margin-top: 12rem;
+        margin-top: -1rem;
+        margin-right: 9rem;
     }
 
     .footer {
@@ -535,7 +535,8 @@ footer h2 {
         grid-auto-flow: column;
         grid-template-columns: 1fr 5fr 1fr;
         grid-template-areas: 
-        "sidebar content title"
+        "sidebar title ."
+        "sidebar content content"
         ". footer footer";
     }
     
@@ -562,10 +563,6 @@ footer h2 {
         text-align: left;
     }
 
-    .title {
-        width: 6rem;
-        height: 30%;
-    }
 
     /* content styling end*/
 

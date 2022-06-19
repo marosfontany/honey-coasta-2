@@ -631,11 +631,13 @@ footer h2 {
     }
 
     .desktop_block {
+        margin: 0px 100px 0px 100px;
         display: grid;
         grid-template-areas: 
-        "lefttext line rightpicture title"
-        "leftpicture line righttext title";
-        grid-template-columns: 9fr 1fr 9fr 2fr;
+        "title . ."
+        "lefttext line rightpicture"
+        "leftpicture line righttext";
+        grid-template-columns: 9fr 1.4fr 9fr ;
         grid-template-rows: 1fr 1fr;
         height: 700px;
     }
@@ -643,7 +645,7 @@ footer h2 {
     .vl_desktop {
         display: block; 
         border-left: 4px solid #222925;
-        height: 90%;
+        height: 92%;
         grid-area: line;  
         margin-top: 67px;
     }
@@ -657,18 +659,20 @@ footer h2 {
         grid-area: lefttext;
         margin-top: 80px;
         margin-left: 10%;
-        width: 80%;
+        width: 90%;
+        padding-right:5%;
     }
 
     .p-right {
         grid-area: righttext ;
-        width: 80%;
+        width: 90%;
     }
 
     .honeycoasta-field {
+        width: 300px;
         grid-area: rightpicture;
         margin-top: 80px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     .artist-background h1 {
@@ -676,14 +680,15 @@ footer h2 {
     }
 
     .honeycoasta-glasses {
-        margin-left: 30%;
+        width: 300px;
+        margin-left: 20%;
         grid-area: leftpicture;
-        margin-top: -80px;
+        margin-top: -150px;
     }
 
     .honey  {
-        margin-left: 260px;
-        margin-bottom: -38%;
+        margin-left: 270px;
+        margin-bottom: -36%;
         margin-top: 40px;
     }
     
@@ -694,15 +699,13 @@ footer h2 {
     }
 
     .title {
-        margin-top: 200%;
-        display: flex;
-        justify-self: center;
+        display: block;
         padding: 20px;
-        height: 350px;
+        width: 70%;
         background-color: #BF5123;
-        margin-right: 100%;
+        margin-top: 50px;
+        margin-left: 10%;
         border: #222925 4px solid;
-        writing-mode: vertical-rl;
         grid-area: title;
 
     }
@@ -722,14 +725,14 @@ footer h2 {
     .road {
         display: block;
         width: 60%;
-        margin: 200px auto auto 15%;
+        margin: 300px auto auto 15%;
     }
     
     .vl-road{
         display: block;
         border-left: 4px solid #222925;
-        margin-left: 43%; 
-        margin-top: 20px;
+        margin-left: 47%; 
+        margin-top: 25px;
         height: 200px;
     }
 

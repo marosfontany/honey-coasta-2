@@ -250,10 +250,12 @@ footer h2 {
 }
 
 .merch-images {
-    height: 340px;
-    width: 340px;
+    height: 280px;
+    width: 300px;
     display:block;
     margin:0 auto;
+    border: 2px solid rgb(0, 0, 0);
+    border-width: 5px;
 }
 
 .merch-section {
@@ -265,10 +267,16 @@ footer h2 {
 .item-name {
     font-family: 'Archivo Black', sans-serif;
     padding-left: 20%;
+    padding-top: 5%;
     font-weight: bold;
     font-size: large;
 }
-
+.item-name2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: normal;
+    font-size: medium;
+    padding-left: 20%;
+}
 .item-description {
     font-family: 'Montserrat', sans-serif;
     padding-left: 20%;
@@ -285,6 +293,15 @@ footer h2 {
     font-family: 'Archivo Black', sans-serif;
     font-weight: bold;
     padding-right: 15%;
+    font-size: medium;
+    padding-left: 30%;
+    border: 2px solid rgb(0, 0, 0);
+    border-width: 2px;
+}
+
+#buy{
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold; 
     font-size: medium;
 }
 
@@ -303,24 +320,19 @@ footer h2 {
 #merch-laptop {
     display: none;
 }
-#flower {
-    margin-bottom: 0%;
-    position: relative;
-    height: 200px;
-    left: 50%;
-}
+
 @media(min-width: 1440px) {
     #merch-title {
         margin-bottom: 0%;
         position: absolute;
-        top: -5%;
-        left: 70%;
+        top: 4%;
+        right: 30%;
     }
 
     #merch-laptop{
         margin: 20px;
         display: block;
-        width: 120%;
+        width: 125%;
     }
 
     #merch-mobile{
@@ -340,19 +352,11 @@ footer h2 {
       }
       
       .column img {
-        margin-top: 8px;
+        margin-top: 140px;
         vertical-align: middle;
         width: 100%;
       }
 
-      #flower {
-        margin-bottom: 0%;
-        position: relative;
-        height: 300px;
-        width: 300px;
-        top: 90%;
-        left: 83%;
-      }    
     .buttons {
         grid-template-areas: 
         "close-button"

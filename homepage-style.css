@@ -298,8 +298,25 @@ h4 {
     border: solid 4px #222925;
 }
 
+.flowers {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 40px;
+}
+
+.flowers-bottom {
+    transform: rotate(180deg);
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .releases {
     background-color: #DBA840;
+    margin-top: 0;
 }
 
 .releases-img {
@@ -365,14 +382,14 @@ h4 {
 
 /* about collaborations section starts here */
 
-.bee-animation {
-    width: 90%;
+.bee-gif {
     position: absolute;
+    width: 90%;
 }
 
 .collabs {
-    background-color: #537358;
-    color: #F5ECDF;
+    /*background-color: #537358;*/
+    color: #222925;
 }
 
 .socials {
@@ -797,15 +814,24 @@ footer h2 {
 
     .collabs-title {
         grid-area: collabs-title;
-        writing-mode:vertical-lr;
         padding: 30px;
+    }
+
+    .bee-gif {
+        position: absolute;
+        width: 30%;
+    }
+
+    .flowers {
+        width: 17%;
     }
 
     .collaborations {
         display: grid;
         grid-template-areas: 
-        "collab1-grid collab2-grid collab3-grid collabs-title"
-        "collab1-grid collab2-grid collab3-grid .";
+        "collabs-title collabs-title collabs-title"
+        "collab1-grid collab2-grid collab3-grid"
+        "collab1-grid collab2-grid collab3-grid";
         margin-bottom: 10%;
     }
 
@@ -821,7 +847,7 @@ footer h2 {
     }
 
     .collab-text {
-        margin: 20px 47px 20px 47px;
+        margin: 5% 20% 5% 20%;
     }
 
    
@@ -896,14 +922,11 @@ footer h2 {
         justify-content: center;
     }
 
-    .bee-animation {
-        width: 30%;
-    }
-
     .about {
         grid-area: about;
-        writing-mode:vertical-lr;
         padding: 30px;
+        margin-right: 50%;
+        margin-bottom: -20%;
     }
 
     .description {
@@ -913,9 +936,11 @@ footer h2 {
     .about-grid {
         display: grid;
         grid-template-areas: 
-        "description about";
+        "about"
+        "description";
         margin-top: 10%;
         margin-bottom: 20%;
+        margin-right: 40px;
     }
 
     .tagline {
@@ -957,7 +982,7 @@ footer h2 {
 
     .new-releases {
         margin: 40px 220px 40px 40px;
-        padding-bottom: 10%;
+        padding-bottom: 2%;
         margin-bottom: 15%;
     }
 
@@ -966,6 +991,19 @@ footer h2 {
         padding: 25px;
         margin-left: auto;
         margin-right: -15%;
+        margin-top: 40px;
+    }
+
+    .flowers {
+        width: 17%;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .flowers-bottom {
+        width: 13%;
+        margin-left: auto;
     }
 
     .releases-img {
@@ -978,6 +1016,11 @@ footer h2 {
     }
 
     .releases-socials {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .releases-title-flex {
         display: flex;
         flex-direction: row;
     }

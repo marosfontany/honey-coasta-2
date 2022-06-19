@@ -193,46 +193,6 @@ audio::-webkit-media-controls-panel{
     text-align: center;
 }
 
-.player-buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.play-line {
-    height: 6px;
-    width: 200px;
-    background-color: #222925;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-top: 10%;
-}
-
-.play-circle {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: #222925;
-    margin-left: 25%;
-    margin-top: -4%;
-}
-
-.play {
-    margin: 0 5%;
-}
-
-.next {
-    transform: rotate(180deg);
-}
-
-.play-next-buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 /* new releases section starts here */
 
 .releases-img {

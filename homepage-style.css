@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #F5ECDF;
     z-index: 0;
@@ -219,12 +223,26 @@ h4 {
     align-items: center;
 }
 
+.underlined {
+    text-decoration: underline;
+    padding: 10px;
+    border: 2px solid #222925;
+}
+
+.underlined-text {
+    text-align: center;
+    line-height: 3.2;
+}
+
+.underlined:hover {
+    background-color: #A4BFBA;
+}
+
 /* about artist section starts here */
 
 .about-paragraph {
     border: solid 4px #222925;
     margin: 40px;
-    background-color: #A4BFBA;
 }
 
 .tagline {
@@ -293,7 +311,7 @@ h4 {
 
 /* new releases section starts here */
 
-.new-releases {
+#new-releases {
     margin: 40px;
     border: solid 4px #222925;
 }
@@ -704,6 +722,11 @@ footer h2 {
 
     .arrow {
         width: 34px;
+        margin-top: 7%;
+    }
+
+    .underlined-text {
+        line-height: 1;
     }
 
     .main-images {
@@ -826,7 +849,7 @@ footer h2 {
         width: 17%;
     }
 
-    .collaborations {
+    #collaborations {
         display: grid;
         grid-template-areas: 
         "collabs-title collabs-title collabs-title"
@@ -926,7 +949,6 @@ footer h2 {
         grid-area: about;
         padding: 30px;
         margin-right: 50%;
-        margin-bottom: -20%;
     }
 
     .description {
@@ -945,7 +967,7 @@ footer h2 {
 
     .tagline {
         margin: 5%;
-        margin-right: 49%;
+        margin-right: 50%;
         font-size: 1.5em;
     }
 
@@ -975,12 +997,7 @@ footer h2 {
         margin-top: -9%;
     }
 
-    .circles {
-        margin-left: -90%;
-        margin-top: -340%;
-    }
-
-    .new-releases {
+    #new-releases {
         margin: 40px 220px 40px 40px;
         padding-bottom: 2%;
         margin-bottom: 15%;

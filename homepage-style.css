@@ -292,8 +292,9 @@ h4 {
     border-radius: 50%;
     border: solid 6px #222925;
     margin-right: auto;
-    margin-left: 40%;
-    margin-top: -50px;
+    margin-left: 20%;
+    margin-top: -20%;
+    position: absolute;
 }
 
 .inside-circle {
@@ -406,7 +407,6 @@ h4 {
 }
 
 .collabs {
-    /*background-color: #537358;*/
     color: #222925;
 }
 
@@ -948,32 +948,41 @@ footer h2 {
     .about {
         grid-area: about;
         padding: 30px;
-        margin-right: 50%;
     }
 
     .description {
         grid-area: description;
+        border: none;
+    }
+
+    .read {
+        grid-area: read;
+        border-right: none;
+        border-bottom: none;
     }
 
     .about-grid {
         display: grid;
         grid-template-areas: 
-        "about"
-        "description";
+        "about description description"
+        "about-picture description description"
+        "about-picture . read";
         margin-top: 10%;
         margin-bottom: 20%;
-        margin-right: 40px;
+        margin-right: 15%;
+        margin-left: 40px;
+        border: 4px solid #222925;
     }
 
     .tagline {
         margin: 5%;
-        margin-right: 50%;
+        border: none;
         font-size: 1.5em;
     }
 
     .tagline-p {
         margin: 5%;
-        margin-right: 49%;
+        padding-left: 24px;
         font-size: 1.1em;
     }
 
@@ -982,19 +991,12 @@ footer h2 {
     }
 
     .about-picture {
-        margin-left: auto;
-        margin-top: -49%;
+        grid-area: about-picture;
+        margin-left: 8%;
+        margin-top: 6%;
+        margin-bottom: -15%;
         height: 425px;
         width: 328px;
-    }
-
-    .picture-button-grid {
-        flex-direction: row-reverse;
-    }
-
-    .read-more {
-        margin-left: 500px;
-        margin-top: -9%;
     }
 
     #new-releases {

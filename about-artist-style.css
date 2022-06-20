@@ -172,7 +172,7 @@ nav ul li a {
 }
 
 h1 {
-    font-family: 'archivo';
+    font-family: 'Archivo Black', sans-serif;
     font-size: 25px;
     color: #222925;
     margin-bottom: 20px;
@@ -327,7 +327,7 @@ hr{
 
 h3 {
     color: #F5ECDF;
-    font-family: 'archivo';
+    font-family: 'Archivo Black', sans-serif;
     margin-bottom: 3px;
     font-size: 14px;
 }

@@ -1,3 +1,4 @@
+// code made by help from https://youtu.be/gXkqy0b4M5g (viewed on: 31/05/2022) //
 const navSlide = () => {
     const pop = document.querySelector(".menu");
     const nav = document.querySelector(".mainmenu");
